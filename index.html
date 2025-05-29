@@ -9,92 +9,102 @@
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
-      background-color: #f8f8f8;
-      color: #111;
-      line-height: 1.6;
+      background-color: #000;
+      color: #fff;
     }
-    header, section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .hero {
-      background: #e6eae9;
+    header {
+      height: 100vh;
+      background: url('https://www.mastermindtokyo.com/wp-content/themes/mastermindtokyo/img/kv.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding: 100px 20px;
     }
-    .hero h1 {
-      font-size: 3em;
-      margin: 0 0 10px;
-      letter-spacing: 2px;
+    header h1 {
+      font-size: 4em;
+      letter-spacing: 4px;
+      margin: 0;
     }
-    .hero p {
+    header p {
+      margin-top: 10px;
       font-size: 1.2em;
-      margin-bottom: 30px;
+      color: #ccc;
     }
     .button {
-      background: #111;
-      color: white;
+      background: #fff;
+      color: #000;
       padding: 12px 25px;
       text-decoration: none;
       font-weight: 600;
       border-radius: 4px;
+      margin-top: 30px;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2em;
+      border-bottom: 1px solid #444;
+      padding-bottom: 10px;
+      margin-bottom: 40px;
     }
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
     }
     .product {
-      background: white;
+      background: #111;
+      border: 1px solid #333;
       padding: 15px;
       border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
     .product img {
       width: 100%;
       border-radius: 6px;
     }
     .product h3 {
+      font-size: 1.2em;
       margin-top: 15px;
-      font-size: 1.1em;
     }
     footer {
       background: #111;
-      color: white;
-      padding: 40px 20px;
       text-align: center;
+      padding: 50px 20px;
     }
     input[type="email"] {
       padding: 10px;
       border: none;
       border-radius: 4px;
       width: 250px;
+      margin-bottom: 10px;
     }
     button {
       padding: 10px 15px;
-      background: #4f5c52;
-      color: white;
+      background: #fff;
+      color: #000;
       border: none;
       border-radius: 4px;
-      margin-left: 10px;
     }
   </style>
 </head>
 <body>
-  <header class="hero">
+  <header>
     <h1>MATCHA</h1>
-    <p>Curated Japanese Fashion — shipped worldwide</p>
-    <a class="button" href="#products">Shop Collection</a>
+    <p>Japanese Fashion — Sourced in Tokyo. Delivered Globally.</p>
+    <a class="button" href="#products">Shop Now</a>
   </header>
 
   <section id="about">
-    <h2>About</h2>
-    <p>MATCHA is a curated selection of high-end Japanese fashion, personally sourced from boutiques across Tokyo, Osaka, and beyond. We focus on timeless aesthetics, premium quality, and exclusive streetwear and minimalist designs. All pieces ship worldwide.</p>
+    <h2>About MATCHA</h2>
+    <p>Inspired by the edge and refinement of Tokyo fashion houses, MATCHA curates high-end Japanese fashion — from rare streetwear drops to minimalist luxury — and delivers globally. Each piece is handpicked in Japan and made available to a worldwide audience.</p>
   </section>
 
   <section id="products">
-    <h2>Featured Pieces</h2>
+    <h2>Featured Collection</h2>
     <div class="products">
       <div class="product">
         <img src="https://cdn.shopify.com/s/files/1/0576/7663/4113/products/3_e0fd2c20-e7a8-4372-bada-8de2f1793969_600x.jpg?v=1689022635" alt="Product 1">
@@ -115,11 +125,12 @@
   </section>
 
   <footer>
-    <h2>Contact</h2>
-    <p>Have a question or want to order directly?</p>
+    <h2>Contact Us</h2>
+    <p>For orders or questions, reach out:</p>
     <form action="mailto:your@email.com" method="post" enctype="text/plain">
       <input type="email" name="email" placeholder="Your email">
-      <button type="submit">Contact Us</button>
+      <br>
+      <button type="submit">Submit</button>
     </form>
   </footer>
 </body>
